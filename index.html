@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Baniya Bhaiya.png" height="60px" class="logo">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#photos">WORK</a></li>
+                    <li><a href="#">RESUME</a></li>
+                    <li><a href="#">CONTACT</a></li>
+
+                </ul>
+            </nav>
+        <div class="header-text">
+            <pre><small>Engineer, Photographer, Designer, Learner.    </small></pre>
+            <h1>Hi,<br> I am Aaditya <span>Vijayvargiya</span><br> From India. And this,<br>is my <span>Portfolio.</span></h1>
+        </div></div>
+    </div>
+    <!-- --------ABOUT------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/20221002_162635.jpg" height="500" alt="My photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptates, necessitatibus corrupti maxime quod exercitationem minus saepe doloribus nam possimus ullam dolorum fugit? Ipsam perspiciatis, nobis nisi quod quaerat sint voluptatem sit deserunt neque.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('Achievements')">Achievements</p>
+                        <p class="tab-links"onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents" id="Skills">
+                       <br>
+                       <ul>
+                        <li><span>Designing</span><br>Posters, logos, etc</li>
+                        <li><span>Coding</span><br>C, Java, HTML, CSS</li>
+                        <li><span>Photography</span><br>Lightroom, Photoshop</li>
+                       </ul> 
+                    </div>
+                    <div class="tab-contents" id="Achievements">
+                        <br>
+                        <ul>
+                         <li><span>School level</span><br>Award for theatres, fastest coder, etc.</li>
+                         
+                        </ul> 
+                     </div>
+                     <div class="tab-contents active.tab" id="Education">
+                        <br>
+                        <ul>
+                         <li><span>10<sup>th</sup></span><br>RLPS, Jhansi</li>
+                         <li><span>12<sup>th</sup></span><br>MHMS, Jhansi</li>
+                         <li><span>Engineering</span><br>BTech CSE from university of petroleum and energy studies.</li>
+                        </ul> 
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------Clicks------ -->
+    
+    
+    <div id="photos">
+        <div class="container">
+            <h1 class="sub-title">Moments Captured</h1>
+            <div class="photo-list">
+                <div class="work">
+                        <a href="images/20221026_220340-01.jpeg"><img src="images/20221026_220340-01.jpeg" height="150px" alt=""></a>
+                        <div><h5>TEMPLE</h5></div>
+                    </div>
+                    <div class="work">
+                        <a href="images/20220723203357_IMG_8875.JPG"><img src="images/20220723203357_IMG_8875.JPG" height="150px" alt=""></a>
+                        
+                        <div><h5>GAUTAM BUDDHA</h5></div>
+                    </div>
+                    <div class="work">
+                        <a href="images/IMG_20221104_235055_715.jpg"><img src="images/IMG_20221104_235055_715.jpg" height="150px" alt=""></a>
+                        
+                        <div><h5>BLOSSOMS</h5></div>
+                    </div>
+                    <div class="work">
+                        <a href="images/20220723202815_IMG_8868.JPG"><img src="images/20220723202815_IMG_8868.JPG" height="150px" alt=""></a>
+                        
+                        <div><h5>WWE</h5></div>
+                    </div>
+                    
+                </div>
+        </div>
+    </div>
+
+
+
+    <!-- ---------contact---------- -->
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fas fa-paper-plane"></i>aadityavv9@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 6307692868</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/aaditya-vijayvargiya-ba5134256/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://instagram.com/baniya.bhaiya?igshid=YmMyMTA2M2Y=/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Aaditya Vijayvargiya resume.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Made <i class="fas fa-heart"></i> by Aaditya Vijayvargiya. </p>
+        </div>
+    </div> 
+    
+    
+    
+
+    <script>
+
+        var tablinks = document. getElementsByClassName ("tab-links");
+        var tabcontents = document. getElementsByClassName ("tab-contents");
+        
+        function opentab (tabname){
+            for(tablink of tablinks){
+            tablink. classList. remove ("active-link");
+            }
+
+            for (tabcontent of tabcontents){
+            tabcontent. classList. remove("active-tab");
+            }
+            event. currentTarget. classList. add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+</script>
+        
+</body>
+</html>
